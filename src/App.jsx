@@ -1,6 +1,6 @@
 export default function App() {
   return (
-    <div className="bg-gray-100 md:py-12">
+    <div className="bg-gray-100 md:py-12 h-full">
       <div className="container mx-auto max-w-4xl border-[1px] bg-white">
         <div className="border-b-[1px] p-4 flex flex-wrap gap-2 justify-between items-center">
           <div className="">
@@ -84,7 +84,7 @@ export default function App() {
             <div>
               <ExperienceCard
                 title="Napnux"
-                duration="(June 2024 - Feb 2025)"
+                duration="(June 2022 - Dec 2023)"
                 link="https://github.com/Ekbal41/napnux"
                 description="Napnux is a lightweight and fast web framework for
             Node.js, designed with low overhead similar to Express.js. It
@@ -106,7 +106,7 @@ const SectionTitle = ({ title }) => {
 const SkillCard = ({ title, skills }) => {
   return (
     <div className="flex flex-col md:flex-row justify-start gap-0 md:gap-2">
-      <p className="font-medium">{title}</p>
+      <p className="font-medium">{title} :</p>
       <div className="text-gray-600">{skills}</div>
     </div>
   );
