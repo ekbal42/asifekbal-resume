@@ -9,18 +9,18 @@ export default function App() {
           </div>
           <div className="">
             <div className="flex justify-start items-center gap-1">
-              <p className="font-medium">Porfolio</p>
+              <p className="font-medium">Porfolio :</p>
               <a
-                href="https//asifekbal.vercel.app/"
+                href="https://asifekbal.vercel.app/"
                 className="hover:underline text-gray-600 "
               >
                 asifekbal.vercel.app
               </a>
             </div>
             <div className="flex justify-start items-center gap-1">
-              <p className="font-medium">E-mail</p>
+              <p className="font-medium">Mail :</p>
               <a
-                href="mailtoasifekbaldev@gmail.com"
+                href="mailto:asifekbaldev@gmail.com"
                 className="hover:underline text-gray-600"
               >
                 asifekbaldev@gmail.com
@@ -68,11 +68,13 @@ export default function App() {
               <ExperienceCard
                 title="Tuition Terminal"
                 duration="(April 2023 - May 2024)"
+                link="https://dev-tuitionterminal.vercel.app"
                 description="During my tenure at Tuition Terminal, I led the React development efforts for tuitionterminal.com.bd. Utilizing ReactJS and Vite for streamlined development, I focused on ensuring the website's responsiveness using Bootstrap for UI design. API integration was handled seamlessly with Axios, while Redux Toolkit facilitated robust state management for the application. The project was deployed on Vercel for scalable and reliable hosting."
               />
               <ExperienceCard
                 title="Porao"
                 duration="(June 2024 - Feb 2025)"
+                link="https://poraome.vercel.app"
                 description="At Porao, I served as a front-end developer, building the project entirely from scratch using React. I employed React Query for optimized data fetching and caching, and ensured a responsive design across mobile and larger displays with TailwindCSS. For global state management alongside React Query, Zustand was utilized. The project was developed in TypeScript for robust type checking and scalability."
               />
             </div>
@@ -81,8 +83,9 @@ export default function App() {
             <SectionTitle title={"Personal Projects"} />
             <div>
               <ExperienceCard
-                title=" Napnux"
+                title="Napnux"
                 duration="(June 2024 - Feb 2025)"
+                link="https://github.com/Ekbal41/napnux"
                 description="Napnux is a lightweight and fast web framework for
             Node.js, designed with low overhead similar to Express.js. It
             offers the same APIs and is production-ready. For more details,
@@ -109,13 +112,25 @@ const SkillCard = ({ title, skills }) => {
   );
 };
 
-const ExperienceCard = ({ title, duration, description }) => {
+const ExperienceCard = ({ title, link, duration, description }) => {
   return (
     <div className="mb-6">
-      <p>
-        <span className="font-semibold">{title}</span>
-        <span className="ml-2 text-gray-600">{duration}</span>
-      </p>
+      <div>
+        <a
+          href={link}
+          target="_blank"
+          className="hover:underline font-semibold"
+        >
+          {title}
+        </a>
+        <a
+          href={link}
+          target="_blank"
+          className="ml-2 text-gray-600 hover:underline"
+        >
+          {duration}
+        </a>
+      </div>
       <p className="mt-2 text-gray-600">{description}</p>
     </div>
   );
