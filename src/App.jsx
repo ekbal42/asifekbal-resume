@@ -33,8 +33,8 @@ export default function App() {
             <div className="flex gap-3">
               <a
                 href="tel:+8801796900817"
-                className="bg-pink-100 text-pink-500 w-12 h-12 hover:text-pink-700
-              flex justify-center items-center rounded-full hover:bg-pink-200
+                className="bg-blue-100 text-blue-500 w-12 h-12 hover:text-blue-700
+              flex justify-center items-center rounded-full hover:bg-blue-200
               dark:bg-gray-700
               "
               >
@@ -42,21 +42,21 @@ export default function App() {
               </a>
               <a
                 href="mailto:asifekbaldev@gmail.com"
-                className="bg-pink-100 text-pink-500 w-12 h-12 hover:text-pink-700
-              flex justify-center items-center rounded-full hover:bg-pink-200 dark:bg-gray-700"
+                className="bg-blue-100 text-blue-500 w-12 h-12 hover:text-blue-700
+              flex justify-center items-center rounded-full hover:bg-blue-200 dark:bg-gray-700"
               >
                 <Mail />
               </a>
               <button
-                className="bg-pink-100 text-pink-500 w-12 h-12 hover:text-pink-700
-              flex justify-center items-center rounded-full hover:bg-pink-200 dark:bg-gray-700"
+                className="bg-blue-100 text-blue-500 w-12 h-12 hover:text-blue-700
+              flex justify-center items-center rounded-full hover:bg-blue-200 dark:bg-gray-700"
                 onClick={() => toPDF()}
               >
                 <FileDown />
               </button>
               <button
-                className="bg-pink-100 text-pink-500 w-12 h-12 hover:text-pink-700
-              flex justify-center items-center rounded-full hover:bg-pink-200 dark:bg-gray-700"
+                className="bg-blue-100 text-blue-500 w-12 h-12 hover:text-blue-700
+              flex justify-center items-center rounded-full hover:bg-blue-200 dark:bg-gray-700"
                 onClick={() => setUiMode(uiMode === "light" ? "dark" : "light")}
               >
                 {uiMode === "light" ? <Sun /> : <Moon />}
@@ -104,12 +104,12 @@ export default function App() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex justify-between items-center mb-8">
               <p className="text-gray-500 dark:text-gray-400">
                 For more see my{" "}
                 <a
                   href="https://github.com/Ekbal41"
-                  className="text-pink-500 underline "
+                  className="text-blue-500 underline "
                 >
                   {" "}
                   github page.
@@ -125,7 +125,7 @@ export default function App() {
 }
 
 const SectionTitle = ({ title }) => {
-  return <h1 className="text-pink-500 font-bold text-2xl mb-2">{title}</h1>;
+  return <h1 className="text-blue-500 font-bold text-2xl mb-2">{title}</h1>;
 };
 
 const SkillCard = ({ title, skills }) => {
