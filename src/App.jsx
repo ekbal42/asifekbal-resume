@@ -104,7 +104,7 @@ export default function App() {
                 ))}
               </div>
             </div>
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center mb-4">
               <p className="text-gray-500 dark:text-gray-400">
                 For more see my{" "}
                 <a
